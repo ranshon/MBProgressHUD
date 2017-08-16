@@ -790,8 +790,11 @@ static const CGFloat kDetailsLabelFontSize = 12.f;
 		self.opaque = NO;
 		_progress = 0.f;
 		_annular = NO;
-		_progressTintColor = [[UIColor alloc] initWithWhite:1.f alpha:1.f];
+        _progressTintColor = [UIColor colorWithRed:98/255.0 green:188/255.0 blue:249/255.0 alpha:1.0];
 		_backgroundTintColor = [[UIColor alloc] initWithWhite:1.f alpha:.1f];
+        UIImageView *imaView = [[UIImageView alloc]initWithFrame:self.frame];
+        imaView.image = [UIImage imageNamed:@"花"];
+        [self addSubview:imaView];
 		[self registerForKVO];
 	}
 	return self;

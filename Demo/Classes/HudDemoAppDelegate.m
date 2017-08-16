@@ -15,8 +15,9 @@
 @synthesize window;
 @synthesize navController;
 
-- (void)applicationDidFinishLaunching:(UIApplication *)application {    
-	window.rootViewController = navController;
+- (void)applicationDidFinishLaunching:(UIApplication *)application {
+    HudDemoViewController *ss = [[HudDemoViewController alloc]init];
+	window.rootViewController = ss;
 	[window makeKeyAndVisible];
 }
 
